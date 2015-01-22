@@ -26,7 +26,7 @@ R language "run_analysis.R"
 >3- Using the "features.txt" file, I associated every reading to one of the variables to give them a meaningful name  (eg. 1st column representing first measurement was mapped to tBodyAcc-mean()-X .. etc) 
 I also used the "activity_labels.txt" to rename activity Id's to give them meaningful names (eg. Activity #1 was changed to "WALKING" .. etc)
 
->4- I also gave each dataset a meaningful name as described in detail in the code book
+>4- I also gave each dataset a meaningful name as described in detail in the script
 
 >5- Finally, I created a new tidy data set grouped by the following:
 a- each of the persons who volunteered for the experiment (30 persons)
@@ -44,12 +44,17 @@ Instructions to run the script "run_analysis.R"
 **Note: **  you should have the R language and the library package "dplyr" installed on your computer to run the script
 
 >1- Download the script file "run_analysis.R" from the github repo from the following link "https://github.com/zimooh/GetData_Assignment"
+
 >2- Download the original data files from the following link "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip" and place the required input files - as described in detail in the "CodeBook.md" - into the same folder where you downloaded the script file on your computer
+
 >3- Start R and at the command prompt set the working directory to be at the location of the downloaded files by using the R command setwd(dir), 
 for example :  setwd("d:/working/R/Repos/CourseraProject")
+
 >4- Load the script file "run_analysis.R" by using the R command source("run_analysis.R")
+
 >5- run the script from the R command line run_analysis()
 Note: the run could take some time depending on your computer since it involves reading ~100Mb data files
+
 >6- The tidy data set will be written to a file "tidy_data.txt that will reside in the same folder. Every run of the script will delete the older version of the "tidy_data.txt" file 
 
 Acknowledgments
